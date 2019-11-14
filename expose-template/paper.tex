@@ -1,0 +1,59 @@
+\documentclass[lnbip]{svmultln}
+%
+\usepackage{makeidx}
+%
+\usepackage{subfiles}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{cleveref}
+\usepackage{glossaries}
+\usepackage[numbers]{natbib}
+
+\makeglossaries
+
+\newacronym{bpm}{BPM}{Business Process Management}
+
+% sat graphics path
+\graphicspath{ {./images/} }
+
+%Combine footnote urls
+\newcommand{\footurl}[1]{\footnote{\url{#1}}}
+
+\setcounter{tocdepth}{5}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% removes the paragraph indentation
+\setlength{\parindent}{0pt}
+
+% defines the paragraph spacing
+\parskip=1.5ex\relax
+
+\begin{document}
+
+%
+\mainmatter              % start of the contribution
+%
+\title{Title}
+%
+\author{Author Name}
+%
+\institute{Hasso Plattner Institute, University of Potsdam, Germany,\\
+\email{email@student.hpi.de}}
+
+\maketitle
+
+\input{01_motivation}
+% \clearpage
+
+\input{02_approach}
+% \clearpage
+
+\input{03_structure-roadmap}
+% \clearpage
+
+\bibliographystyle{plainnat}
+\bibliography{related-work}
+
+\end{document}
