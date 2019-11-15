@@ -7,16 +7,21 @@ A curated list of awesome master thesis related things
 
 ## Latex Editors
 
-- https://www.overleaf.com/
+- [Overleaf](https://www.overleaf.com/) - Cloud-based LaTeX editor
+
+## Other Editors
+
+- [Auratikum](https://app.auratikum.com) - Cloud-based editor for creating and structuring notes
 
 ## Reference Management Tools
 
-- https://www.jabref.org/
+- [JabRef](https://www.jabref.org/) - Desktop application for bibliography reference management
+- [CrossRef](https://search.crossref.org/) - Online Reference Search Engine
 
 ## Spell Checking Tools
 
-- https://grammarly.com
+- [Grammarly](https://grammarly.com)
 
 ## Translation Tools
 
-- https://www.deepl.com/translator
+- [DeepL](https://www.deepl.com/translator)
