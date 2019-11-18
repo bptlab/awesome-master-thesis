@@ -1,5 +1,10 @@
 # awesome-master-thesis
+
 A curated list of awesome master thesis related things
+
+## How to Write a Master Thesis
+
+![Master Thesis Process](./process/master-thesis-process.svg)
 
 ## Fonts
 
