@@ -20,8 +20,9 @@ A curated list of awesome master thesis related things
 
 ## Reference Management Tools
 
-- [JabRef](https://www.jabref.org/) - Desktop application for bibliography reference management
+- [Citavi](https://www.citavi.com/de) - Comprehensive desktop application for reference management (Windows only. [Free for UP Students](https://www.uni-potsdam.de/de/zim/angebote-loesungen/software-campuslizenzen/campuslizenz-citavi.html))
 - [CrossRef](https://search.crossref.org/) - Online Reference Search Engine
+- [JabRef](https://www.jabref.org/) - Desktop application for bibliography reference management (Windows, Mac, JAR-version)
 
 ## Spell Checking Tools
 
