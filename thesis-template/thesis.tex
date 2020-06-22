@@ -2,12 +2,12 @@
 %- Listings in Chap 6 do need numbers or smth
 \documentclass[11pt]{book}
 \usepackage[
-	a4paper,
-	inner=3cm,
-	outer=2.5cm,
-	top=3cm,
-	bottom=2.5cm,
-	twoside
+a4paper,
+inner=3cm,
+outer=2.5cm,
+top=3cm,
+bottom=2.5cm,
+twoside
 ]{geometry}
 
 \newif\ifen
@@ -17,6 +17,7 @@
 % Choose language
 %% German
 \usepackage[ngerman]{babel}
+\usepackage{fontspec}
 \detrue
 \enfalse
 %% English
@@ -27,28 +28,28 @@
 \masterthesisfalse
 %
 \newcommand{\de}[1]{
-\ifde
-#1
-\else
-\fi
+	\ifde
+	#1
+	\else
+	\fi
 }
 \newcommand{\en}[1]{
-\ifde
-\else
-#1
-\fi
+	\ifde
+	\else
+	#1
+	\fi
 }
 \newcommand{\mt}[1]{
-\ifmasterthesis
-#1
-\else
-\fi
+	\ifmasterthesis
+	#1
+	\else
+	\fi
 }
 \newcommand{\bt}[1]{
-\ifbachelorthesis
-\else
-#1
-\fi
+	\ifbachelorthesis
+	\else
+	#1
+	\fi
 }
 % Diverse Packages laden
 \usepackage[onehalfspacing]{setspace}
@@ -69,11 +70,11 @@
 \usepackage[nottoc,notlof]{tocbibind}
 \usepackage{hyperref}
 \hypersetup{
-    colorlinks,
-    citecolor=black,
-    filecolor=black,
-    linkcolor=black,
-    urlcolor=black
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
 }
 
 \usepackage{amsthm,amsfonts,amssymb}
@@ -93,10 +94,10 @@
 
 \usepackage{titlesec}
 \titleformat{\chapter}[display]
-  {\sffamily\LARGE}
-  {\en{Chapter}\de{Kapitel} \thechapter}
-  {1ex}
-  {\huge\bfseries}
+{\sffamily\LARGE}
+{\en{Chapter}\de{Kapitel} \thechapter}
+{1ex}
+{\huge\bfseries}
 \titleformat*{\section}{\LARGE\bfseries\sffamily}
 \titleformat*{\subsection}{\Large\bfseries\sffamily}
 \titleformat*{\subsubsection}{\Large\sffamily}
@@ -109,9 +110,9 @@
 
 \makeatletter
 \AtBeginDocument{%
-\let\c@table\c@lstlisting
-\let\thetable\thelstlisting
-\let\ftype@lstlisting\ftype@table % give the floats the same precedence
+	\let\c@table\c@lstlisting
+	\let\thetable\thelstlisting
+	\let\ftype@lstlisting\ftype@table % give the floats the same precedence
 }
 \makeatother
 
@@ -140,13 +141,13 @@
 
 % Bibliography
 \usepackage[
-	backend     = biber,
-	maxbibnames = 99,
-	natbib      = true,
-	doi         = false,
-	isbn        = false,
-	url         = false,
-	citestyle   = numeric
+backend     = biber,
+maxbibnames = 99,
+natbib      = true,
+doi         = false,
+isbn        = false,
+url         = false,
+citestyle   = numeric
 ]{biblatex}
 \addbibresource{references.bib}
 
@@ -154,24 +155,24 @@
 \usepackage{unicode-math}
 \usepackage{fontspec}
 \setmainfont{pt-serif}[
-	Path           = fonts/,
-	Extension      = .ttf,
-	UprightFont    = *-regular,
-	BoldFont       = *-bold,
-	ItalicFont     = *-italic,
-	BoldItalicFont = *-bolditalic
+Path           = fonts/,
+Extension      = .ttf,
+UprightFont    = *-regular,
+BoldFont       = *-bold,
+ItalicFont     = *-italic,
+BoldItalicFont = *-bolditalic
 ]
 \setsansfont{pt-sans}[
-	Path           = fonts/,
-	Extension      = .ttf,
-	UprightFont    = *-regular,
-	BoldFont       = *-bold,
-	ItalicFont     = *-italic,
-	BoldItalicFont = *-bolditalic,
-	Scale          = MatchLowercase
+Path           = fonts/,
+Extension      = .ttf,
+UprightFont    = *-regular,
+BoldFont       = *-bold,
+ItalicFont     = *-italic,
+BoldItalicFont = *-bolditalic,
+Scale          = MatchLowercase
 ]
 \setmathfont{Latin Modern Math}[
-	Scale          = MatchLowercase
+Scale          = MatchLowercase
 ]
 
 \setlength{\footnotesep}{4mm}
@@ -219,33 +220,33 @@
 
 \raggedbottom
 \begin{document}
-
-% Hack to actually create blank pages between chapters.
-\let\origdoublepage\cleardoublepage
-\newcommand{\clearemptydoublepage}{%
-\clearpage {\pagestyle{empty}\origdoublepage}}
-\let\cleardoublepage\clearemptydoublepage
-% End Hack.
-
-\include{content/0-frontmatter}
-
-\mainmatter
-\include{content/1-introduction}
-\include{content/2-background}
-\include{content/3-related-work}
-\include{content/4-approach}
-\include{content/5-evaluation}
-\include{content/6-discussion}
-\include{content/7-conclusion}
-
-\printbibliography[heading = bibintoc]
-
-\appendix
-\titleformat{\chapter}[display]
-  {\sffamily\LARGE}
-  {\en{Appendix}\de{Anhang} \thechapter}
-  {1ex}
-  {\huge\bfseries}
-\include{content/8-appendix}
-
+	
+	% Hack to actually create blank pages between chapters.
+	\let\origdoublepage\cleardoublepage
+	\newcommand{\clearemptydoublepage}{%
+		\clearpage {\pagestyle{empty}\origdoublepage}}
+	\let\cleardoublepage\clearemptydoublepage
+	% End Hack.
+	
+	\include{content/0-frontmatter}
+	
+	\mainmatter
+	\include{content/1-introduction}
+	\include{content/2-background}
+	\include{content/3-related-work}
+	\include{content/4-approach}
+	\include{content/5-evaluation}
+	\include{content/6-discussion}
+	\include{content/7-conclusion}
+	
+	\printbibliography[heading = bibintoc]
+	
+	\appendix
+	\titleformat{\chapter}[display]
+	{\sffamily\LARGE}
+	{\en{Appendix}\de{Anhang} \thechapter}
+	{1ex}
+	{\huge\bfseries}
+	\include{content/8-appendix}
+	
 \end{document}
