@@ -12,7 +12,7 @@ A curated list of awesome master thesis related things
 
 ## Latex Editors
 
-- [Overleaf](https://www.overleaf.com/) - Cloud-based LaTeX editor
+- [Overleaf](https://www.overleaf.com/) - Cloud-based LaTeX editor. Note: Use the XeLaTeX compiler instead of LaTeX or pdfLaTeX compilers
 
 ## Other Editors
 
