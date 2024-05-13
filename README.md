@@ -12,7 +12,7 @@ A curated list of awesome master thesis related things
 
 ## Latex Editors
 
-- [Overleaf](https://www.overleaf.com/) - Cloud-based LaTeX editor. Note: Use the XeLaTeX compiler instead of LaTeX or pdfLaTeX compilers
+- [Overleaf](https://www.overleaf.com/) - Cloud-based LaTeX editor. Note: Use the XeLaTeX compiler instead of LaTeX or pdfLaTeX compilers. (Free Pro version for HPI students! Add your HPI-email-address to get access.)
 
 ## Other Editors
 
@@ -27,6 +27,9 @@ A curated list of awesome master thesis related things
 ## Spell Checking Tools
 
 - [Grammarly](https://grammarly.com)
+- [LanguageTool](https://languagetool.org/)
+
+(Both integrate in Overleaf)
 
 ## Translation Tools
 
